@@ -1,3 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+}
 .container {
   width: 70%;
   margin: auto;
@@ -15,7 +23,8 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 50px;
+  text-align: center;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
@@ -38,4 +47,21 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+
+@media only screen and (max-width: 600px) {
+
+  h1{
+    font-size: 4rem;
+  }
+  .container{
+    /* margin-top: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  img{
+    width: 40%;
+  }
 }
